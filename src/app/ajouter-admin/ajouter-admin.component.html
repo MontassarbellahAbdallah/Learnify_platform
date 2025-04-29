@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <html lang="en" data-layout="topnav"> -->
+
+<head>
+    <meta charset="utf-8" />
+    <title>Learnify</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    
+    
+</head>
+
+<body>
+    <!-- Begin page -->
+    <div class="wrapper">
+
+        
+        <!-- Sidenav Menu Start -->
+        <app-menu></app-menu>
+        <!-- Sidenav Menu End -->
+
+        <!-- Topbar Start -->
+        <app-header></app-header>
+        <!-- Topbar End -->
+
+        
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="page-content">
+
+            <div class="page-container">
+
+                <div class="page-title-box">
+                    
+                    <div class="d-flex align-items-sm-center flex-sm-row flex-column gap-2">
+                        <div class="flex-grow-1">
+                            <h4 class="font-18 mb-0">Administrateur</h4>
+                        </div>
+
+                        <div class="text-end">
+                            <ol class="breadcrumb m-0 py-0">
+                                <li class="breadcrumb-item"><a href="javascript: void(0);">Ajouter</a></li>
+                                
+                                
+                                <li class="breadcrumb-item active">Administrateur</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+
+                    
+                </div>
+
+               <!-- end row -->
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">Ajouter Administrateur</h5>
+                            </div>
+                            <form [formGroup]="adminForm" (ngSubmit)="addNewAdmin()">
+                                <div class="card-body pt-2">
+                                    <div class="form-group row">
+                                        <label class="col-lg-2 col-form-label">Nom</label>
+                                        <div class="col-lg-8">
+                                            <input class="form-control" type="text" formControlName="nom" placeholder="nom" >
+                                        </div>
+                                        <!-- <div *ngIf="nom?.touched &&nom?.invalid"><small class="text-danger " *ngIf="nom?.errors?.['required']">nom est obiligatoire</small></div> -->
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-2 col-form-label">Prenom</label>
+                                        <div class="col-lg-8">
+                                            <input class="form-control" type="search" formControlName="prenom" placeholder="prenom">
+                                        </div>
+                                        <!-- <div *ngIf="prenom?.touched &&prenom?.invalid"><small class="text-danger " *ngIf="prenom?.errors?.['required']">prenom est obiligatoire</small></div> -->
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-2 col-form-label">Email</label>
+                                        <div class="col-lg-8">
+                                            <input class="form-control" type="email" formControlName="email" placeholder="Email">
+                                        </div>
+                                        <!-- <div *ngIf="email?.touched &&email?.invalid"><small class="text-danger " *ngIf="email?.errors?.['required']">email est obiligatoire</small></div>   -->
+
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-2 col-form-label">Mot de passe</label>
+                                        <div class="col-lg-8">
+                                            <input class="form-control" type="password" formControlName="mdp" placeholder="Mot de passe">
+                                        </div>
+                                        <!-- <div *ngIf="mdp?.touched &&mdp?.invalid"><small class="text-danger " *ngIf="mdp?.errors?.['required']">mot de passe est obiligatoire</small></div>   -->
+
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-2 col-form-label">Role</label>
+                                        <div class="col-lg-8">
+                                            <select class="form-select mb-3" formControlName="role" >
+                                                <option selected>Choisir</option>
+                                                <option value="1">Admin</option>
+                                                <option value="2">Sous_Admin</option>
+                                            </select>
+                                        </div>
+                                        <!-- <div *ngIf="role?.touched &&role?.invalid"><small class="text-danger " *ngIf="role?.errors?.['required']">role est obiligatoire</small></div>   -->
+
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn-primary">Ajouter</button>
+                                    <br/>
+                                    <span [innerHtml]="this.messageCommande"></span>
+                                
+                                </div>
+                            </form> <!-- end card-body -->
+                        </div> <!-- end card -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+
+ <!-- end row -->
+            </div> <!-- container -->
+
+
+            <!-- Footer Start -->
+            <app-footer></app-footer>
+            <!-- end Footer -->
+
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+    </div>
+    <!-- END wrapper -->
+
+    <!-- Theme Settings -->
+   
+
+    
+
+</body>
+
+
+</html>
