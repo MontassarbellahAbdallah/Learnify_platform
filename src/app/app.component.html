@@ -1,0 +1,11 @@
+<app-header></app-header>
+<router-outlet></router-outlet>
+<!-- Icône de chatbot -->
+<div class="chat-icon" (click)="toggleChat()">
+    <img src="assets/images/Logo_chatboot.png" alt="Chat Icon">
+  </div>
+  <div *ngIf="isChatVisible" class="chat-container">
+    <app-chatbot></app-chatbot>
+  </div>
+
+<app-footer></app-footer>

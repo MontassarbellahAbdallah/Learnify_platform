@@ -1,0 +1,98 @@
+<header class="header header-3">
+    <div class="sticky-height"></div>
+    
+    <div class="header-nav-wrapper header-sticky">
+    <nav class="navbar navbar-expand-xl border-bottom">
+    <div class="container-fluid px-lg-5 px-3">
+    <a class="navbar-brand" href="./index.html"><img src="assets/images/Learnify-logo.png" alt="Learnify"></a>
+    <div class="header-actions d-none d-sm-flex position-relative order-xl-3  d-flex align-items-center justify-content-between">
+    <div class="category-search d-none d-md-block">
+    <form action="#" class="d-flex ">
+    <div class="d-flex align-items-center">
+    </div>
+
+    </form>
+    </div> 
+    <a class="text-reset icon border rounded-2 admin-user" data-bs-toggle="collapse" href="#collapseAdminMenu" role="button" aria-expanded="false" aria-controls="collapseAdminMenu">
+        <i class="feather-icon icon-user"></i>
+        </a>
+    <div class="admin-menu pt-3 bg-white collapse" id="collapseAdminMenu">
+    <div class="d-flex avatar border-bottom pb-3">
+    <img class="img-fluid border rounded-circle" src="assets/images/icons/logo-samar.png" width="50" alt="avatar">
+    <div class="grettings ps-3">
+    <h6 class="mb-0">Samar Aribi</h6>
+    <small>Founder</small>
+    </div>
+    </div>
+    <nav class="dashboard-nav mt-1">
+    <ul class="list-unstyled nav">
+    <li><a class="nav-link" href="instructor-dashboard.html"  [routerLink]="['/dashboard']"><i class="feather-icon icon-home"></i><span>Dashboard</span></a></li>
+    <li><a class="nav-link" href="instructor-profile.html" [routerLink]="['/profile']"><i class="feather-icon icon-user"></i><span>My
+    Profile</span></a></li>
+   
+    <li><a class="nav-link" href="instructor-order-history.html"[routerLink]="['/historie']"><i class="feather-icon icon-shopping-bag"></i><span>Order
+    History</span></a></li>
+    <li class="border-bottom"> </li>
+   
+ 
+    
+    
+    
+    <li><a class="nav-link" href="instructor-announcements.html"  [routerLink]="['/Announcements']"><i class="feather-icon icon-bell"></i><span>Announcements</span></a>
+    </li>
+    <li class="border-bottom">
+    </li>
+    
+    <li><a class="nav-link" href="index.html"><i class="feather-icon icon-log-out"></i><span>Logout</span></a>
+    </li>
+    </ul>
+    </nav>
+    </div>
+    <a href="./signup.html" [routerLink]="['/enrollnow']" class="btn d-none d-sm-block btn-primary shadow border-0 rounded-2">Enroll Now</a>
+    </div>
+    <button class="navbar-toggler offcanvas-nav-btn" type="button">
+    <span class="feather-icon icon-menu"></span>
+    </button>
+    <div class="offcanvas bg-info offcanvas-start offcanvas-nav">
+    <div class="offcanvas-header">
+    <a href="./index.html" class="text-inverse"><img src="assets/images/logo.png" alt="Logo"></a>
+    <button type="button" class="btn-close bg-primary" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body pt-0 align-items-center">
+    <ul class="navbar-nav mx-auto align-items-lg-center">
+    <li class="nav-item dropdown">
+    <a class="nav-link " [routerLink]="['/Home']" href="#" role="button"  data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+   
+  
+   
+    
+    
+    
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link " [routerLink]="['/About']" href="#" role="button"  data-bs-toggle="dropdown" aria-expanded="false">About</a>
+      
+        </li>
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+    <ul class="dropdown-menu">
+   
+    <li><a class="dropdown-item" [routerLink]="['/courses-list']" href="courses-list.html">Courses List</a></li>
+    <li><a class="dropdown-item" [routerLink]="['/course-detail']" href="courses-details.html">Courses Details</a></li>
+    <li><a class="dropdown-item" [routerLink]="['/lesson']" href="courses-list.html">Courses Lesson</a></li>
+    
+    </ul>
+    </li>
+  
+    
+    <li class="nav-item dropdown">
+    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" [routerLink]="['/contact']" aria-expanded="false">Contact</a>
+   
+    </li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </nav>
+    </div>
+    </header>
